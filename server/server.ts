@@ -48,11 +48,11 @@ try {
 
 const httpServer = http.createServer(app);
 
-const staticPath = path.join(process.cwd(), '..', 'tic-tac-toe/client/dist');
+const staticPath = `${process.cwd()}/client/dist`;
 
 app.use('/', express.static(staticPath));
 
-console.log(staticPath);
+console.log({ staticPath });
 
 const webSocketServer = new WebSocketServer({ server: httpServer });
 
