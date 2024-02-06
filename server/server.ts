@@ -4,7 +4,7 @@ import fs from 'fs';
 import express from 'express';
 import { config } from 'dotenv';
 import { WebSocketServer } from 'ws';
-import path from 'path';
+import path from 'node:path';
 import { handleEventMessage } from './handlers/message/handleEventMessage.js';
 import { handleEventClose } from './handlers/close/handleEventClose.js';
 import { handleEventOpen } from './handlers/open/handleEventOpen.js';
